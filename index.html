@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Sistema de Login e Senha</title>
+</head>
+
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="img/bgvideo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+
+    <div class="video-overlay"></div>
+
+    <header>
+        <h1>Sistema de Login e Senha</h1>
+        <p>
+            Login: <span class="log-cor">admin</span>
+            Senha: <span class="log-cor">123</span>
+        </p>
+    </header>
+
+    <main>
+        <section class="c-login">
+            <input type="text" name="login" id="login" placeholder="Login"><br><br>
+            <input type="password" name="senha" id="senha" placeholder="********"><br><br>
+            <button type="button" onclick="entrar()" class="botao">Entrar</button>
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p id="ano">Todos os Direitos Reservados</p>
+    </footer>
+
+
+
+    <script src="js/login.js"></script>
+    <script>
+        document.getElementById('ano').innerHTML = '© ' + new Date().getFullYear() + ' André | Todos os Direitos Reservados';
+    </script>
+    
+
+
+
+</body>
+
+</html>
